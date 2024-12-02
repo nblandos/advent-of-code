@@ -1,6 +1,6 @@
 import os
 from collections import Counter
-file_path = os.path.join(os.path.dirname(__file__), "d1.txt")
+file_path = os.path.join(os.path.dirname(__file__), "input.txt")
 
 left_nums, right_nums = [], []
 similarity = 0
