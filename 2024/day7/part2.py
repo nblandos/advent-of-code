@@ -10,9 +10,9 @@ possible = defaultdict(list)
 
 
 def check_valid(key, values):
-    for ops in product(operators, repeat=len(values)-1):
+    for op_combination in product(operators, repeat=len(values)-1):
         result = values[0]
-        for i, op in enumerate(ops):
+        for i, op in enumerate(op_combination):
             next_val = values[i+1]
             if op == '+':
                 result += next_val
